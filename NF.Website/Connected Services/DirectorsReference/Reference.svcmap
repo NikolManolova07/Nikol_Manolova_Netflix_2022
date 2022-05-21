@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="8409ab9d-fca2-4285-9205-ec1781c86286" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <GenerateTaskBasedAsynchronousMethod>true</GenerateTaskBasedAsynchronousMethod>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://localhost:62760/Directors.svc" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="Directors.xsd" MetadataType="Schema" ID="73fa7021-3478-47e7-8d3e-73616e2512ff" SourceId="1" SourceUrl="http://localhost:62760/Directors.svc?xsd=xsd0" />
+    <MetadataFile FileName="Directors1.xsd" MetadataType="Schema" ID="7a64d211-e1b2-4394-b5f7-aa2689e1af61" SourceId="1" SourceUrl="http://localhost:62760/Directors.svc?xsd=xsd1" />
+    <MetadataFile FileName="Directors.wsdl" MetadataType="Wsdl" ID="a4c3fcf8-c1f6-46ad-b7e6-a564159fde82" SourceId="1" SourceUrl="http://localhost:62760/Directors.svc?wsdl" />
+    <MetadataFile FileName="Directors2.xsd" MetadataType="Schema" ID="035f2299-8d8b-45d1-bc48-6e81c1920748" SourceId="1" SourceUrl="http://localhost:62760/Directors.svc?xsd=xsd2" />
+    <MetadataFile FileName="Directors.disco" MetadataType="Disco" ID="2644eb35-4879-464e-bec2-4ad7d2ce0f4e" SourceId="1" SourceUrl="http://localhost:62760/Directors.svc?disco" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

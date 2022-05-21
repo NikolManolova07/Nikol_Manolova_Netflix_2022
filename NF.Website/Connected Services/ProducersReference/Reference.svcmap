@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="acebe461-f552-4b57-8b97-a8522117dbd1" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <GenerateTaskBasedAsynchronousMethod>true</GenerateTaskBasedAsynchronousMethod>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://localhost:62760/Producers.svc" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="Producers.xsd" MetadataType="Schema" ID="8a63f749-ec7d-4586-8edf-3f9e0316b206" SourceId="1" SourceUrl="http://localhost:62760/Producers.svc?xsd=xsd1" />
+    <MetadataFile FileName="Producers1.xsd" MetadataType="Schema" ID="ee1a945d-76ac-49a2-a082-ab9825ba015b" SourceId="1" SourceUrl="http://localhost:62760/Producers.svc?xsd=xsd2" />
+    <MetadataFile FileName="Producers.wsdl" MetadataType="Wsdl" ID="7dddb10d-2bea-4fe3-8624-7604fc88b914" SourceId="1" SourceUrl="http://localhost:62760/Producers.svc?wsdl" />
+    <MetadataFile FileName="Producers.disco" MetadataType="Disco" ID="1741458c-a3a3-4286-b43e-a9017ebf1a2d" SourceId="1" SourceUrl="http://localhost:62760/Producers.svc?disco" />
+    <MetadataFile FileName="Producers2.xsd" MetadataType="Schema" ID="7e2fec7b-f971-47c3-a713-175765670be2" SourceId="1" SourceUrl="http://localhost:62760/Producers.svc?xsd=xsd0" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

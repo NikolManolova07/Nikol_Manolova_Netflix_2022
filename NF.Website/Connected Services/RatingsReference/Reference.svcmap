@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="84886d1c-8889-4a21-b24d-11f8951b1efe" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <GenerateTaskBasedAsynchronousMethod>true</GenerateTaskBasedAsynchronousMethod>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://localhost:62760/Ratings.svc" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="Ratings.xsd" MetadataType="Schema" ID="7f0d051a-298b-4875-bde6-b30f56faab36" SourceId="1" SourceUrl="http://localhost:62760/Ratings.svc?xsd=xsd1" />
+    <MetadataFile FileName="Ratings1.xsd" MetadataType="Schema" ID="4d17afa9-6ac6-46de-892a-ebdd7d724c29" SourceId="1" SourceUrl="http://localhost:62760/Ratings.svc?xsd=xsd0" />
+    <MetadataFile FileName="Ratings.wsdl" MetadataType="Wsdl" ID="bdc14a89-a5a8-4caa-aa93-4b14cb9a9218" SourceId="1" SourceUrl="http://localhost:62760/Ratings.svc?wsdl" />
+    <MetadataFile FileName="Ratings2.xsd" MetadataType="Schema" ID="df51b001-2ddf-4189-b679-36114bbd589c" SourceId="1" SourceUrl="http://localhost:62760/Ratings.svc?xsd=xsd2" />
+    <MetadataFile FileName="Ratings.disco" MetadataType="Disco" ID="e7f2f5db-6980-4666-8470-23a59674a032" SourceId="1" SourceUrl="http://localhost:62760/Ratings.svc?disco" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

@@ -1,0 +1,84 @@
+﻿@model NF.Website.ViewModels.MovieVM
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Movie</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Title)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Title)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.ReleaseDate)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ReleaseDate)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.ReleaseCountry)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ReleaseCountry)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.DirectorId)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.DirectorVM.FirstName)
+            @Html.DisplayFor(model => model.DirectorVM.LastName)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.ProducerId)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ProducerVM.FirstName)
+            @Html.DisplayFor(model => model.ProducerVM.LastName)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.GenreId)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.GenreVM.Name)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.MovieInfo)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.MovieInfo)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.RatingId)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.RatingVM.Name)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.Id }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

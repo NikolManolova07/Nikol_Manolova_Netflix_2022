@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:wsap="http://schemas.xmlsoap.org/ws/2004/08/addressing/policy" xmlns:wsa10="http://www.w3.org/2005/08/addressing" xmlns:tns="http://tempuri.org/" xmlns:msc="http://schemas.microsoft.com/ws/2005/12/wsdl/contract" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:wsx="http://schemas.xmlsoap.org/ws/2004/09/mex" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:xsd="http://www.w3.org/2001/XMLSchema" name="Ratings" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <xsd:schema targetNamespace="http://tempuri.org/Imports">
+      <xsd:import schemaLocation="http://localhost:62760/Ratings.svc?xsd=xsd0" namespace="http://tempuri.org/" />
+      <xsd:import schemaLocation="http://localhost:62760/Ratings.svc?xsd=xsd1" namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+      <xsd:import schemaLocation="http://localhost:62760/Ratings.svc?xsd=xsd2" namespace="http://schemas.datacontract.org/2004/07/NF.ApplicationServices.DTOs" />
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="IRatings_GetRatings_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetRatings" />
+  </wsdl:message>
+  <wsdl:message name="IRatings_GetRatings_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetRatingsResponse" />
+  </wsdl:message>
+  <wsdl:message name="IRatings_GetRatingsByName_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetRatingsByName" />
+  </wsdl:message>
+  <wsdl:message name="IRatings_GetRatingsByName_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetRatingsByNameResponse" />
+  </wsdl:message>
+  <wsdl:message name="IRatings_GetRatingById_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetRatingById" />
+  </wsdl:message>
+  <wsdl:message name="IRatings_GetRatingById_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetRatingByIdResponse" />
+  </wsdl:message>
+  <wsdl:message name="IRatings_PostRating_InputMessage">
+    <wsdl:part name="parameters" element="tns:PostRating" />
+  </wsdl:message>
+  <wsdl:message name="IRatings_PostRating_OutputMessage">
+    <wsdl:part name="parameters" element="tns:PostRatingResponse" />
+  </wsdl:message>
+  <wsdl:message name="IRatings_PutRating_InputMessage">
+    <wsdl:part name="parameters" element="tns:PutRating" />
+  </wsdl:message>
+  <wsdl:message name="IRatings_PutRating_OutputMessage">
+    <wsdl:part name="parameters" element="tns:PutRatingResponse" />
+  </wsdl:message>
+  <wsdl:message name="IRatings_DeleteRating_InputMessage">
+    <wsdl:part name="parameters" element="tns:DeleteRating" />
+  </wsdl:message>
+  <wsdl:message name="IRatings_DeleteRating_OutputMessage">
+    <wsdl:part name="parameters" element="tns:DeleteRatingResponse" />
+  </wsdl:message>
+  <wsdl:portType name="IRatings">
+    <wsdl:operation name="GetRatings">
+      <wsdl:input wsaw:Action="http://tempuri.org/IRatings/GetRatings" message="tns:IRatings_GetRatings_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IRatings/GetRatingsResponse" message="tns:IRatings_GetRatings_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetRatingsByName">
+      <wsdl:input wsaw:Action="http://tempuri.org/IRatings/GetRatingsByName" message="tns:IRatings_GetRatingsByName_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IRatings/GetRatingsByNameResponse" message="tns:IRatings_GetRatingsByName_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetRatingById">
+      <wsdl:input wsaw:Action="http://tempuri.org/IRatings/GetRatingById" message="tns:IRatings_GetRatingById_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IRatings/GetRatingByIdResponse" message="tns:IRatings_GetRatingById_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="PostRating">
+      <wsdl:input wsaw:Action="http://tempuri.org/IRatings/PostRating" message="tns:IRatings_PostRating_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IRatings/PostRatingResponse" message="tns:IRatings_PostRating_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="PutRating">
+      <wsdl:input wsaw:Action="http://tempuri.org/IRatings/PutRating" message="tns:IRatings_PutRating_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IRatings/PutRatingResponse" message="tns:IRatings_PutRating_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="DeleteRating">
+      <wsdl:input wsaw:Action="http://tempuri.org/IRatings/DeleteRating" message="tns:IRatings_DeleteRating_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IRatings/DeleteRatingResponse" message="tns:IRatings_DeleteRating_OutputMessage" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="BasicHttpBinding_IRatings" type="tns:IRatings">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="GetRatings">
+      <soap:operation soapAction="http://tempuri.org/IRatings/GetRatings" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetRatingsByName">
+      <soap:operation soapAction="http://tempuri.org/IRatings/GetRatingsByName" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetRatingById">
+      <soap:operation soapAction="http://tempuri.org/IRatings/GetRatingById" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="PostRating">
+      <soap:operation soapAction="http://tempuri.org/IRatings/PostRating" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="PutRating">
+      <soap:operation soapAction="http://tempuri.org/IRatings/PutRating" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DeleteRating">
+      <soap:operation soapAction="http://tempuri.org/IRatings/DeleteRating" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="Ratings">
+    <wsdl:port name="BasicHttpBinding_IRatings" binding="tns:BasicHttpBinding_IRatings">
+      <soap:address location="http://localhost:62760/Ratings.svc" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

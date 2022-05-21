@@ -1,0 +1,109 @@
+﻿@model PagedList.IPagedList<NF.Website.ViewModels.MovieVM>
+@using PagedList.Mvc;
+<link href="~/Content/PagedList.css" rel="stylesheet" type="text/css" />
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<style>
+    .h2 {
+        color: white;
+        text-align: center;
+        font-size: 24px;
+        background-color: #cd261b;
+        padding: 10px;
+        border-radius: 10px;
+        box-shadow: 2px 2px 5px #c5c7c9;
+        display: inline-block;
+    }
+</style>
+
+<h2 class="h2">Movies</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+
+@using (Html.BeginForm("Index", "Movie", FormMethod.Get))
+{
+    <p>
+        Find by release country: @Html.TextBox("SearchString", ViewBag.CurrentFilter as string)
+        <input type="submit" value="Search" />
+    </p>
+}
+
+<table class="table">
+    <tr>
+        <th>
+            Title
+        </th>
+        <th>
+            Release Date
+        </th>
+        <th>
+            Release Country
+        </th>
+        <th>
+            Director
+        </th>
+        <th>
+            Producer
+        </th>
+        <th>
+            Genre
+        </th>
+        <th>
+            Movie Information
+        </th>
+        <th>
+            Rating
+        </th>
+        <th></th>
+    </tr>
+
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.Title)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.ReleaseDate)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.ReleaseCountry)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.DirectorVM.FirstName)
+                @Html.DisplayFor(modelItem => item.DirectorVM.LastName)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.ProducerVM.FirstName)
+                @Html.DisplayFor(modelItem => item.ProducerVM.LastName)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.GenreVM.Name)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.MovieInfo)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.RatingVM.Name)
+            </td>
+            <td>
+                @Html.ActionLink("Edit", "Edit", new { id = item.Id }) |
+                @Html.ActionLink("Details", "Details", new { id = item.Id }) |
+                @Html.ActionLink("Delete", "Delete", new { id = item.Id })
+            </td>
+        </tr>
+    }
+
+</table>
+
+<br />
+Page @(Model.PageCount < Model.PageNumber ? 0 : Model.PageNumber) of @Model.PageCount
+
+@Html.PagedListPager(Model, page => Url.Action("Index",
+    new { page, currentFilter = ViewBag.CurrentFilter }))
+

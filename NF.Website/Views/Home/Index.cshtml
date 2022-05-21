@@ -1,0 +1,68 @@
+﻿@{
+    ViewBag.Title = "Home Page";
+}
+
+<style>
+    .h2 {
+        color: white;
+        text-align: center;
+        font-size: 24px;
+        background-color: #cd261b;
+        padding: 10px;
+        border-radius: 10px;
+        box-shadow: 2px 2px 5px #c5c7c9;
+    }
+
+    .p {
+        text-align: justify;
+        background-color: #fff;
+        border-radius: 10px;
+        padding: 10px;
+        font-size: 14px;
+        box-shadow: 2px 2px 5px #c5c7c9;
+    }
+</style>
+
+<div id="myCarousel" class="carousel slide" data-ride="carousel">
+    <ol class="carousel-indicators">
+        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+        <li data-target="#myCarousel" data-slide-to="1"></li>
+        <li data-target="#myCarousel" data-slide-to="2"></li>
+    </ol>
+    <div class="carousel-inner">
+        <div class="item active">
+            <img src="~/Images/Netflix_1.jpg" />
+        </div>
+        <div class="item">
+            <img src="~/Images/Netflix_2.jpg" />
+        </div>
+        <div class="item">
+            <img src="~/Images/Netflix_3.jpg" />
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-md-4">
+        <h2 class="h2">Netflix</h2>
+        <p class="p">
+            Netflix is a streaming service that offers a wide variety of award-winning TV shows, movies, anime, documentaries, and more on thousands of internet-connected devices.
+            You can watch as much as you want, whenever you want without a single commercial – all for one low monthly price.
+            There's always something new to discover and new TV shows and movies are added every week!
+        </p>
+    </div>
+    <div class="col-md-4">
+        <h2 class="h2">How can I watch?</h2>
+        <p class="p">
+            Create an account and dive into the world of the greatest films for one fixed monthly fee!
+            Netflix has an extensive library of feature films, documentaries, TV shows, anime, award-winning Netflix originals, and more.
+            Learn more about plans and accounts on the link below.
+        </p>
+        <p><a class="btn btn-default" href="https://www.netflix.com/bg/">Sign Up &raquo;</a></p>
+    </div>
+    <div class="col-md-4">
+        <h2 class="h2">Where can I watch?</h2>
+        <p class="p">Watch anywhere, anytime. Sign in with your Netflix account to watch instantly on the web at netflix.com from your personal computer or on any internet-connected device that offers the Netflix app, including smart TVs, smartphones, tablets, streaming media players and game consoles.</p>
+        <p><a class="btn btn-default" href="https://devices.netflix.com/en/">Ways to Watch &raquo;</a></p>
+    </div>
+</div>
